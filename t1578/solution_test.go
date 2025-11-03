@@ -30,6 +30,12 @@ func Test(t *testing.T) {
 			neededTime: []int{1, 2, 3, 4, 1},
 			expected:   2,
 		},
+		{
+			name:       "test 4",
+			colors:     "bbbaaa",
+			neededTime: []int{4, 9, 3, 8, 8, 9},
+			expected:   23,
+		},
 	}
 	for _, tc := range tt {
 		t.Run(tc.name, func(t *testing.T) {
